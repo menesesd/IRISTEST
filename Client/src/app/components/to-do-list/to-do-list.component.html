@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>
+        To Do List
+    </h1>
+    <mat-accordion class="headers-align" multi>
+        <mat-expansion-panel *ngFor="let item of functions">
+          <mat-expansion-panel-header class="hola">
+            <mat-panel-title>
+              {{item.name}}
+            </mat-panel-title>
+            <mat-panel-description *ngIf="item.icon">            
+              <mat-icon>{{item.icon}}</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+         Más opciones
+      
+        </mat-expansion-panel>
+     
+      
+  
+      </mat-accordion>
+</div>
